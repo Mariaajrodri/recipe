@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Recipe for Venezuelan Arepas</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css?family=Spartan:200&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+  </style>
+  </head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/main.css">
+  <body id='background'>
+    <center><header>
+      How to make Venezuelan Arepas
+    </header>
+
+
+    <div class="accordion">
+
+    <h2><a href="">Ingredients to make the Arepa dough</a></h2>
+    <p>
+      • 4 Cups of P.A.N. pre-cooked white corn meal
+    <br>
+      • 4 Cups of water
+    <br>
+      • 1/4 Cup of Canola Oil (any brand)
+    <br>
+      • 1 Tablespoon of Salt
+   <br>
+   • PAM Original Canola Oil Blend
+   <br>
+<img src="img/arena.jpg" alt="Mariajose " class="thumbnail" id='ingredientpics'>
+<img src="img/water.jpg" alt="Mariajose " class="thumbnail" id='ingredientpics'>
+<img src="img/oil.jpg" alt="Mariajose " class="thumbnail" id='ingredientpics'>
+<img src="img/salt.jpg" alt="Mariajose " class="thumbnail" id='ingredientpics'>
+  </p>
+
+
+
+
+    <h2><a href="">Ingredients you can stuff the Arepa with after cooked</a></h2>
+    <p>
+
+        <br>Honey Ham
+        <br>Salami
+        <br>Chedder Cheese
+        <br>Cheese Wiz
+        <br>Philadelphia Cream Cheese
+        <br> Avocado
+        <br>Shredded Meat
+        <br>Shredded Cheese
+    </p>
+
+    <div class="demobox">
+        <ol>
+            <li> Preheat your pan skillet or electric skillet to 400°F.
+            <li>
+            Have the 4 cups of corn meal, 4 cups of water, 1/4 cup of Canola Oil, and 1 Tablespoon of Salt
+            ready to mix into a big bowl. Add each item by order as said above.
+
+            <li> Make sure you wash your hands before touching the dough.
+            <li>You will start massaging and mixing everything together in the bowl.
+              The goal is to get rid of the little balls that get formed. Similar to mash potatoes and trying to get rid of the concentrated
+              areas.
+            <li>Keep massaging the dough till you have no residue on your hands from mixing or on the sides of the bowl.
+            <li>You will go back to your pan or electric skillet and spray PAM Original Canola Oil Blend. Cover all the heating areas.
+            <li>Have your bowl with the Arepa dough right next to you and your heated skillet.
+            <li> Grab a handful of dough and create a ball that fits in-between the palm of your hands. Think like you're creating a snowball.
+              Pat the dough ball around fixing all deformity.
+            <li>Now, you will flatten that dough ball into a flat pancake. Pat the edges of the flattened dough all around circling the pancaked dough against your hands.
+            <li>After all edges are smooth on the flattened dough, place it on the heated skillet.
+            <li>Let each side of the Arepa cook till each side is golden with a touch of grill burn.
+            <li> You will keep grabbing handfulls of dough and repeating steps 7-10.
+            <li> On a pan skillet you will most likely only place 1 or 2 Arepa doughs to cook. On a electric skillet, you might be
+              able to place about 6 in rows of 3.
+            </div>
+
+<button id='directionsbutton'>Directions</button>
+
+<button id='tipsbutton'>Tips</button>
+
+<div id='demobox2' class="demobox">
+  <ul>
+  <li>  You can make them FRIED too! Follow the same steps and instead place them on a pan with hot oil, flip each side.
+  <br>
+  <li>If you saved some, to reheat you will reheat them on the skillet again. Spray the PAM oil blend or add butter to the pan
+  and place the arepa till you feel each side warm with just placing your finger to feel the temperature.
+  <br>
+  <li> For a healthier taste and feel, use vegetable oil.
+  <br>
+  <li>You can have them for breakfast, lunch, or dinner depending what you add to the inside. For example. for breakfast
+  you can add a over medium egg with ham and cheese.
+</div>
+
+
+<main class="gallery">
+  <div class="photo"><img src="img/1.jpg" id="slide">
+  </div>
+  <div id="caption">Condensed Steps in pictures</div>
+  <div id="allofthem" class="thumbnail"><img src="img/allofthem.jpg" alt="aot"></div>
+  <div id="massage" class="thumbnail"><img src="img/massage.jpg" alt="massaging"></div>
+  <div id="residue" class="thumbnail"><img src="img/residue.jpg" alt="residue"></div>
+  <div id="aftermassage" class="thumbnail"><img src="img/aftermassage.jpg" alt="aftermassage"></div>
+  <div id="makeball" class="thumbnail"><img src="img/makeball.jpg" alt="ball"></div>
+</main>
+
+<main class="gallery1">
+  <div class="photo"><img src="img/1.jpg" id="slide">
+  </div>
+  <div id="pam" class="thumbnail"><img src="img/pam.jpg" alt="pam"></div>
+  <div id="firstarepa" class="thumbnail"><img src="img/firstarepa.jpg" alt="arepa"></div>
+  <div id="skillet" class="thumbnail"><img src="img/skillet.jpg" alt="arepas"></div>
+  <div id="skilletgold" class="thumbnail"><img src="img/skilletgold.jpg" alt="goldarepas"></div>
+  <div id="finallook" class="thumbnail"><img src="img/finallook.jpg" alt="donearepa"></div>
+</main>
+
+
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+          var allPanels = $('.accordion > p').hide();
+
+          $('.accordion > h2 > a').click(function() {
+            allPanels.slideUp();
+            $(this).parent().next().slideDown();
+            return false;
+          });
+
+          $("#directionsbutton").click(function() {
+                $(".demobox").toggle(1000);
+            });
+
+          $("#tipsbutton").click(function() {
+                $("#demobox2").toggle(1000);
+            });
+            $("#allofthem").click(function(){
+                $("#slide").attr('src','img/1.jpg');
+                $("#caption").html(" Step 2: All the ingredients")
+            });
+            $("#massage").click(function(){
+                $("#slide").attr('src','img/2.jpg');
+                $("#caption").html("Step 4: Massaging the dough.")
+            });
+            $("#residue").click(function(){
+                $("#slide").attr('src','img/3.jpg');
+                $("#caption").html("Your hands shoud not have this much residue on  them. Keep massaging.")
+            });
+            $("#aftermassage").click(function(){
+                $("#slide").attr('src','img/4.jpg');
+                  $("#caption").html(" Step 5: How the dough should look after the massage.")
+            });
+            $("#makeball").click(function(){
+                $("#slide").attr('src','img/5.jpg');
+                $("#caption").html(" Step 8: Make a ball out of the dough.")
+            });
+            $("#pam").click(function(){
+                $("#slide").attr('src','img/6.jpg');
+                $("#caption").html("Spray PAM Oil Blend")
+            });
+            $("#firstarepa").click(function(){
+                $("#slide").attr('src','img/7.jpg');
+                $("#caption").html(" Step 10: After you have pancaked the Arepa dough flat, place it on the heated skillet.")
+            });
+            $("#skillet").click(function(){
+                $("#slide").attr('src','img/8.jpg');
+                $("#caption").html("Keep repeating till you fill you heating skillet.")
+            });
+            $("#skilletgold").click(function(){
+                $("#slide").attr('src','img/9.jpg');
+                $("#caption").html("As you flip the Arepas you will see thier golden color.")
+            });
+            $("#finallook").click(function(){
+                $("#slide").attr('src','img/10.jpg');
+                $("#caption").html("Here are some done Arepas. They are ready for you to slice horizontally and add what you would like.")
+            });
+
+
+
+            });
+    </script>
+  </body>
+</html>

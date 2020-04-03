@@ -1,0 +1,215 @@
+body {
+  font: 16px Sans-Serif;
+  background-color: #FFE4C4;
+  font-family:'Spartan', sans-serif;
+}
+
+header {
+  margin-top: 20px;
+  font-size: 45px;
+font-weight: bold;
+font-family: 'Bebas Neue', cursive;
+letter-spacing: 3px;
+color:#ffbf80;
+}
+#background {
+  background: url("../img/background.jpg") no-repeat center fixed;
+  background-size: cover;
+
+}
+
+#directionsbutton {
+  margin: 20px;
+  float: left;
+  width:80px;
+  height: 30px;
+}
+#tipsbutton {
+  margin: 20px;
+  float: right;
+  width:50px;
+  height: 30px;
+
+}
+.accordion {
+  margin: 30px;
+}
+
+.accordion h2,
+.accordion p {
+  padding: 10px;
+  border: 4px solid #ffd9b3;
+  border-bottom: 0;
+  /*this changes the top and side borders*/
+}
+
+.accordion h2:last-of-type,
+.accordion p:last-of-type {
+  border-bottom: 4px solid #ffd9b3;
+  /*this changes the bottom borders*/
+}
+
+.accordion h2 a,
+.accordion p a {
+  display: block;
+  color: black;
+/*this changes the font of headers*/
+}
+
+.accordion h2 {
+  padding: 15px;
+  margin-bottom: 0;
+  margin-top: 0;
+  /*this changes the padding of the headers*/
+
+}
+.accordion p {
+  padding: 20px;
+  border-top: 0;
+  font-size: 15px;
+  background: #efefef;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top: 5px solid white;
+  /*these are the paragraphs*/
+}
+.accordion p:last-of-type {
+  border-top: 5px solid white;
+  position: relative;
+  top: -1px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.demobox {
+    background: #F0F8FF;
+    border:5px black solid ;
+    margin: 20px;
+    padding: 30px;
+    width: 30%;
+    /* the transition property animates when you add a class */
+    text-align: left;
+    float: left;
+
+}
+#demobox2 {
+  background: #F0F8FF;
+  border:5px black solid ;
+  margin: 20px;
+  padding: 30px;
+  width: 30%;
+  /* the transition property animates when you add a class */
+  float: right;
+}
+img {
+    max-width: 100%;
+}
+
+   #caption {
+    grid-area: caption;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 3px;
+    font-size: 20px;
+
+   }
+
+   .photo {
+     grid-area: photo;
+   }
+   .thumbnail {
+       width: 100px;
+       padding: 4px;
+       background: black;
+       text-align: center;
+   }
+
+#ingredientpics {
+  margin-top: 8px;
+}
+#allofthem {
+  grid-area: t1;
+  padding: 5px;
+  width: 250px;
+  margin-right: 5px;
+}
+#massage {
+  grid-area: t2;
+  padding: 5px;
+  width: 200px;
+  margin-right: 5px;
+}
+#residue {
+  grid-area: t3;
+  padding: 5px;
+  margin-right: 5px;
+  width: 250px;
+}
+#aftermassage {
+  grid-area: t4;
+  padding: 5px;
+  width: 250px;
+  margin-right: 5px;
+}
+#makeball {
+  grid-area: t5;
+  padding: 5px;
+  width: 200px;
+  margin-right: 10px;
+}
+#pam {
+  grid-area: t6;
+  padding: 5px;
+  width: 200px;
+  margin-right:10px;
+}
+#firstarepa {
+  grid-area: t7;
+  padding: 5px;
+  width: 200px;
+  margin-right:10px;
+}
+#skillet {
+  grid-area: t8;
+  padding: 5px;
+  width: 200px;
+  margin-right: 10px;
+}
+#skilletgold {
+  grid-area: t9;
+  padding: 5px;
+  width: 200px;
+  margin-right: 10px;
+}
+#finallook {
+  grid-area: t10;
+  padding: 5px;
+  width: 200px;
+
+}
+.gallery {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    align-items: center;
+    margin-left: 0;
+    float: left;
+    width: auto;
+    grid-template-areas:
+    "photo photo photo photo photo"
+    "caption caption caption caption caption"
+    "t1 t2 t3 t4 t5";
+}
+.gallery1 {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    align-items: center;
+    float: left;
+    width: auto;
+    grid-template-areas:
+    "photo photo photo photo photo"
+    "caption caption caption caption caption"
+    "t6 t7 t8 t9 t10";
+}
